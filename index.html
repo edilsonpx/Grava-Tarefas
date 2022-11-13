@@ -1,0 +1,99 @@
+<html>
+
+<head>
+   
+ <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+       
+
+      
+     
+
+
+      .container-fluid{
+      	text-align: center;
+      }
+
+
+      .list-group-item{
+      	background-color: red;
+      	width: 150px;
+      	padding: 20px;
+      	margin: 20px;
+
+      }
+      .caixa{
+text-align: center;
+      }
+
+    
+
+
+    </style>
+
+
+     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.5.4/firebase.js"></script>
+
+
+
+
+    <body>
+
+    
+    	
+ 
+
+
+    	<div id="div_lista"> </div>
+
+    	<script src="firebase.js"></script>
+
+
+
+    	 <div class="container-fluid">
+          <h1 class="mt-4">Minha lista de tarefas.</h1>
+          <div class="row">
+            <input
+              id="newItem"
+              name="newItem"
+              class="form-control col-5 ml-2"
+              type="text"
+              placeholder="Nova tarefa"
+            />
+            <button class="btn btn-primary ml-1" onclick="addTask()">
+              Adicionar
+            </button>
+          </div>
+
+
+        
+
+          <ul id="itemList" class="list-group list-group-flush">
+              <div class="caixa">
+            <li class="list-group-item">Carregando ...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    </body>
